@@ -1,0 +1,57 @@
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff7ed;
+    color: #000000;
+}
+.aboutPhoto{
+    background-image: url("/src/assets/image 54.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: coral;
+    height: 30vh;
+    width: 100%;
+}
+.aboutText{
+    /* background-color: blue; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.aboutHeaderText, .aboutpara{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutpara{
+    font-size: 1.1rem;
+    color: hsla(0, 0%, 0%, 0.753);
+}
+.aboutVanText{
+    background-color: #ffcc8d;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.vanExploreText{
+  color: #000000;
+}
+.vanExploreBtn{
+     background-color: #000000;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer; 
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: .75rem 1.375rem;
+    transition: transform .1s ease-in-out;
+}
+.vanExploreBtn:hover {
+    transform: translate(1px, 1px);
+}

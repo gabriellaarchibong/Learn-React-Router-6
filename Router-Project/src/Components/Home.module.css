@@ -1,0 +1,39 @@
+
+.main{
+    background-image: url("/src/assets/image 53.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsla(0, 0%, 0%, 0.171);
+    height: 75vh;
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainerItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    /* background-color: red; */
+    margin-top: 2rem;
+    padding: 10px;
+}
+.header, .para, .btn{
+    text-align: center;
+}
+.btn{
+    background-color: #ff8c38;
+    font-size: 1.2rem;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: hsla(25, 100%, 61%, 0.795);
+}
+.para{
+    font-size: 1.1rem;
+}
