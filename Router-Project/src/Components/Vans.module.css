@@ -58,6 +58,10 @@
     color: #000000;
     /* background-color: red; */
 }
+.vanName{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 .productBtns{
     /* height: 34px; */
     padding: 6px 26px;

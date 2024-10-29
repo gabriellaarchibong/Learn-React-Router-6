@@ -1,0 +1,20 @@
+.hostNavContainer{
+    
+    padding: 5px;
+    background-color: #fff7ed;
+}
+.hostNav{
+    padding: 10px;
+    /* margin: 10px; */
+}
+.hostNavLinks{
+    padding: 10px;
+    margin: 10px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hostNavLinks:hover{
+    color: #161616;
+    text-decoration: underline;
+    font-weight: 600;
+}

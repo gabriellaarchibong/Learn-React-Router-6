@@ -36,12 +36,14 @@ function Vans() {
         <div className={styles.productDisplayContainer2}>
           {vans.map(({id, name, imageUrl, price, type}) => (
             <div key={id} className={styles.container}>
+              <Link to={`/vans/${id}`} aria-label={`view details for ${name} price at $${price} per day`}>
                 <img className={styles.productImage} src={imageUrl} alt="van-image" />
                 <div className={styles.productDetails}>
-                    <h3>{name}</h3>
+                    <p className={styles.vanName}>{name}</p>
                     <p>${price}<span>/day</span></p>
                 </div>
                 <i className={`${styles.productBtns} ${styles.selected} ${type}`}>{type}</i>
+                </Link>
             </div>
             ))}
         </div>
