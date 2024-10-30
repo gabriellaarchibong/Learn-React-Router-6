@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.css"
+import userCircle from "/src/assets/User circle.png"
 function Header() {
     const activeStyles = {
         fontWeight: "bold",
@@ -7,7 +8,7 @@ function Header() {
         color: "#161616"
     }
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.navigator}>
         <Link to="/" className={styles.vanlife}>
           #Vanlife
@@ -22,6 +23,9 @@ function Header() {
           <NavLink to="/vans" className={styles.vans} style={({isActive}) => isActive ? activeStyles : null}>
             Vans
           </NavLink>
+          <Link to="/login" className={styles.vans}>
+            <img src={userCircle} alt="user-circle" />
+          </Link>
         </div>
       </nav>
     </header>

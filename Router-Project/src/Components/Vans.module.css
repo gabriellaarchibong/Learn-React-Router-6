@@ -23,20 +23,35 @@
 }
 .vanPageLinksContainer2{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    flex-wrap: wrap;
 }
 .vanPageLinks{
-    background-color: #ffdad0;
-    width: 25%;
+    background-color: #ffead0;
+    /* height: 34px; */
+    width: 30%;
     margin: 5px;
-    padding: 10px;
+    padding: 10px ;
     text-align: center;
+    font-weight: 500;
     text-decoration: none;
     color: #000000;
 }
-.vanPageLinks:hover{
-  background-color: hsla(13, 100%, 91%, 0.788);
+.clearFilter{
+    font-style: normal;
+    background-color: transparent;
+    text-decoration: underline;
+    color: #4d4d4d;
+    width: 40%;
+    border: none;
+    font-size: 1.5rem;
+}
+.clearFilter:hover{
+    color: #4d4d4dbd;
+}
+.clearFilter:focus{
+    outline: none;
 }
 
 .productDisplayContainer2{
@@ -72,7 +87,7 @@
     margin: 9px;
     color: #4dadad;
     /* background-color: #ffead0; */
-    background-color: black;
+    background-color: #e17654;
     transition: 200ms all cubic-bezier(0.4,0,0.2,1);
 }
 .productBtns:hover {
@@ -83,8 +98,24 @@
 }
 .productBtns.selected{
     color: #ffead0;
+    background-color: #115e59;
 }
-.productBtns.simple:hover, .productBtns.simple.selected{
+.simple{
+    background-color: #e17654;
+    color: #ffead0;
+    text-decoration: underline;
+}
+.luxury{
+    background-color: #115e59;
+    color: #ffead0;
+    text-decoration: underline;
+}
+.rugged{
+    background-color: #161616;
+    color: #ffead0;
+    text-decoration: underline;
+}
+.productBtns[type = "simple"]:hover, .productBtns[type ="simple"].selected{
     background-color: #e17654;
 }
 .productBtns.rugged:hover, .productBtns.rugged.selected{
@@ -93,3 +124,4 @@
 .productBtns.luxury:hover, .productBtns.luxury.selected{
     background-color: #161616;
 }
+

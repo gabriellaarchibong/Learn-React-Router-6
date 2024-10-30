@@ -17,7 +17,7 @@ function ListedVans() {
       {listedVans.map((vans) => (
 
         <div key={vans.id}>
-        <Link to={`/host/vans/${vans.id}`}>
+        <Link to={vans.id}>
             <div className={styles.infobox}>
                 <div className={styles.imageBox}>
                  <img className={styles.image} src={vans.imageUrl} alt="" />
