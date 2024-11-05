@@ -29,12 +29,14 @@
 }
 .footer{
     background-color: #252525;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     margin-top: auto;
     font-weight: 500;
+    
 }
 .footerText{
     padding: 10px;

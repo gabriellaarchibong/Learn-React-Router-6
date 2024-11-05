@@ -1,0 +1,58 @@
+.incomeCont{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.incomeText{
+    align-self: flex-start;
+    /* background-color: red;  */
+    padding: 0 40px; 
+    width: 100%;
+}
+.graphCont{
+    align-self: flex-start;
+    /* background-color: blue; */
+    margin: 10px 20px;
+    padding: 10px;
+    width:90%;
+    max-width: 700px;
+}
+.graphImage{
+    width: 100%;
+}
+.infoCont{
+    /* background-color: purple; */
+    padding: 10px 20px;
+    margin: 10px 20px;
+    /* width: 90%; */
+}
+.yourTransaction{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.transHeader{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.transHeader2{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.infoCont2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.incomePrice{
+    font-weight: 900;
+    font-size: 2rem;
+}

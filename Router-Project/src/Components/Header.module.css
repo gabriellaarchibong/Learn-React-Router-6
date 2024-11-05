@@ -1,20 +1,15 @@
-/* .header{
-    height: 110px;
+.header{
     display: flex;
     align-items: center;
-    padding-block: 10px;
-    background-color: red;
-} */
+}
 .navigator{
     display: flex;
-    /* justify-content: center;  */
-    /* margin-right: auto; */
-    text-transform: uppercase;
-    /* font-weight: 900; */
+    justify-content: space-between; 
+    margin-right: auto;
+    /* margin: 10px; */
+    font-weight: 900;
     padding: 10px;
-    /* background-color: #FFF7ED; */
-    background-color: blue;
-
+    background-color: #FFF7ED;
     width: 100vw;
 }
 .vanlife{
@@ -27,17 +22,17 @@
     font-weight: bold;
 }
 .navigator2{
-    /* background-color: red; */
-    padding: 5px 20px;
+    padding:10px;
     color: #adadad;
-    font-weight: 600;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 .home, .vans{
     padding: 10px;
     text-decoration: none;
     font-size: 1rem;
+    font-weight: 600;
     color: hsla(0, 0%, 0%, 0.856);
 }
 .footer{

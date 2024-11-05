@@ -1,11 +1,18 @@
-import { useEffect, useState } from "react";
-import { Link, NavLink, Outlet, useParams } from "react-router-dom";
+// import { useEffect, useState } from "react";
+import { Link, NavLink, Outlet, useLoaderData} from "react-router-dom";
 import styles from "./HostVanDetail.module.css";
 import backArrow from "/src/assets/Arrow 1.png";
+import { getVanId } from "../useApi";
+ import { authenticate } from "../auth";
+export async function loader ({params, request}) {
+  await authenticate(request)
+  return getVanId(params.id)
+}
 
 function HostVanDetails() {
-  const [vanId, setVanId] = useState(null);
-  const params = useParams();
+  const vanId = useLoaderData()
+  // const [vanId, setVanId] = useState(null);
+  // const params = useParams();
   // console.log(params)
   const activeStyles = {
     fontWeight: "bold",
@@ -13,11 +20,11 @@ function HostVanDetails() {
     color: "#161616",
   };
 
-  useEffect(() => {
-    fetch(`/api/host/vans/${params.id}`)
-      .then((res) => res.json())
-      .then((data) => setVanId(data.vans));
-  }, [params.id]);
+  // useEffect(() => {
+  //   fetch(`/api/host/vans/${params.id}`)
+  //     .then((res) => res.json())
+  //     .then((data) => setVanId(data.vans));
+  // }, [params.id]);
   return (
     <>
       <div className={styles.container}>

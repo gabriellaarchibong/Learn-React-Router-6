@@ -1,0 +1,29 @@
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
+.imageCont{
+    width: 80%;
+    max-width: 700px;
+    padding: 10px;
+    margin: 10px;
+}
+.image{
+    width: 100%;
+}
+.infoCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 20px;
+    margin: 10px;
+    border-bottom: 1px solid #000;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.star{
+    color: #ff8c38;
+}

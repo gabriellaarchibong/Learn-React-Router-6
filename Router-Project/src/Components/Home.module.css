@@ -23,6 +23,7 @@
 }
 .header, .para, .btn{
     text-align: center;
+    color: #ffffff;
 }
 .btn{
     background-color: #ff8c38;
