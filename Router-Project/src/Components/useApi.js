@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import {getAuth} from "firebase/auth"
 import {collection, doc, getDoc, getDocs, getFirestore, query, where} from "firebase/firestore/lite"
 const firebaseConfig = {
   apiKey: "AIzaSyAT4ORt84uq8XJ33tIK307IaQusQu18VSw",
@@ -11,6 +12,10 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(app)
+
+
 const db = getFirestore(app);
 const collectionRef = collection(db, "vansData")
 
@@ -70,3 +75,13 @@ export async function loginUser (creds){
     }
     return data
 }
+
+// export async function loginUser (creds){
+//    const userCreds = await signInWithEmailAndPassword(auth, creds)
+//    console.log(userCreds)
+//    const userInfo =  userCreds.user
+// //    console.log(userInfo)
+//     return userInfo
+
+// }
+

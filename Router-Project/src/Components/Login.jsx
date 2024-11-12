@@ -12,9 +12,11 @@ export async function action({ request }) {
   const formData = await request.formData();
   const email = formData.get("email");
   const password = formData.get("password");
-  const data = await loginUser({ email, password });
-  localStorage.setItem("loggedIn", true);
+  const data = await loginUser({email, password} );
   console.log(data);
+  // const userInfo = data.user
+  localStorage.setItem("loggedIn", true);
+  
   const pathname = new URL(request.url).searchParams.get("redirectTo") || "/host"
   if (data) {
     const response = redirect(pathname);
@@ -24,12 +26,6 @@ export async function action({ request }) {
   return null;
 }
 function Login() {
-  // const [loginFormData, setLoginFormData] = useState({
-  //   email: "",
-  //   password: "",
-  // });
-  // const [submit, setSubmit] = useState("idle");
-  // const [error, setError] = useState(null);
 
   const message = useLoaderData();
   const navigation = useNavigation();
